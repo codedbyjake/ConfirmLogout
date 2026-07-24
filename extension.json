@@ -1,0 +1,25 @@
+{
+  "name": "ConfirmLogout",
+  "version": "1.0.0",
+  "author": "[https://github.com/codedbyjake Jake Linford]",
+  "url": "https://github.com/codedbyjake/ConfirmLogout",
+  "description": "Asks the user to confirm before logging out.",
+  "license-name": "MIT",
+  "type": "other",
+
+  "manifest_version": 2,
+
+  "AutoloadNamespaces": {
+    "MediaWiki\\Extension\\ConfirmLogout\\": "includes/"
+  },
+
+  "Hooks": {
+    "BeforePageDisplay": "MediaWiki\\Extension\\ConfirmLogout\\Hooks::onBeforePageDisplay"
+  },
+
+  "MessagesDirs": {
+    "ConfirmLogout": [
+      "i18n"
+    ]
+  }
+}
